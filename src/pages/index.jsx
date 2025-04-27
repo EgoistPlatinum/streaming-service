@@ -15,6 +15,7 @@ export default function () {
       <Categories/>
       <Devices/>
       <Questions/>
+      <p>Plans</p>
     </>
   )
 }
