@@ -1,9 +1,10 @@
 import getParams from '@/utils/getParams'
 import pxToRem from '@/utils/pxToRem'
+import BaseComponent from '@/modules/generic/BaseComponent'
 
 const rootSelector = '[data-js-tabs]'
 
-class Tabs {
+class Tabs extends BaseComponent {
   selectors = {
     root: rootSelector,
     navigation: '[data-js-tabs-navigation]',
@@ -21,6 +22,7 @@ class Tabs {
   }
 
   constructor(rootElement) {
+    super()
     this.rootElement = rootElement
     this.params = getParams(this.rootElement, this.selectors.root)
     this.navigationElement = this.params.navigationTargetElementId
@@ -28,16 +30,16 @@ class Tabs {
       : this.rootElement.querySelector(this.selectors.navigation)
     this.buttonElements = [...this.navigationElement.querySelectorAll(this.selectors.button)]
     this.contentElements = [...this.rootElement.querySelectorAll(this.selectors.content)]
-    this.state = {
-      activeTabIndex: this.buttonElements.findIndex(({ ariaSelected }) => ariaSelected)
-    }
+    this.state = this.getProxyState({
+      activeTabIndex: this.buttonElements.findIndex(({ariaSelected}) => ariaSelected)
+    })
     this.limitTabsIndex = this.buttonElements.length - 1
     this.bindEvents()
     setTimeout(this.bindObservers, 500)
   }
 
   updateUI() {
-    const { activeTabIndex } = this.state
+    const {activeTabIndex} = this.state
 
     this.buttonElements.forEach((buttonElement, index) => {
       const isActive = index === activeTabIndex
@@ -61,7 +63,7 @@ class Tabs {
   updateNavigationCSSVars(
     activeButtonElement = this.buttonElements[this.state.activeTabIndex]
   ) {
-    const { width, left } = activeButtonElement.getBoundingClientRect()
+    const {width, left} = activeButtonElement.getBoundingClientRect()
     const offsetLeft = left - this.navigationElement.getBoundingClientRect().left
 
     this.navigationElement.style.setProperty(
@@ -77,7 +79,6 @@ class Tabs {
 
   activateTab(newTabIndex) {
     this.state.activeTabIndex = newTabIndex
-    this.updateUI()
     this.buttonElements[newTabIndex].focus()
   }
 
@@ -107,11 +108,10 @@ class Tabs {
 
   onButtonClick(buttonIndex) {
     this.state.activeTabIndex = buttonIndex
-    this.updateUI()
   }
 
   onKeyDown = (event) => {
-    const { target, code, metaKey } = event
+    const {target, code, metaKey} = event
     const isTabsContentFocused = this.contentElements
       .some((contentElement) => contentElement === target)
     const isTabsButtonFocused = this.buttonElements
