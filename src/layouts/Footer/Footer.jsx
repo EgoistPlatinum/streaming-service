@@ -1,6 +1,5 @@
 import './Footer.scss'
-import Socials from "@/components/Socials";
-
+import Socials from '@/components/Socials'
 
 const Footer = () => {
   const menuItems = [
@@ -49,7 +48,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer__inner container">
         <nav className="footer__menu">
-          {menuItems.map(({title, links, socialLinks}, index) => (
+          {menuItems.map(({ title, links, socialLinks }, index) => (
             <div className="footer__menu-column" key={index}>
               <a className="footer__menu-title h6" href="/">{title}</a>
               {links?.length > 0 && (
@@ -71,9 +70,7 @@ const Footer = () => {
         </nav>
         <div className="footer__extra">
           <p className="footer__copyright">
-            @
-            <time dateTime="2023">{new Date().toLocaleString('default', {year: 'numeric'})}</time>
-            streamvib, All Rights Reserved
+            @<time dateTime="2023">2023</time> streamvib, All Rights Reserved
           </p>
           <div className="footer__extra-links">
             {extraLinks.map((link, index) => (

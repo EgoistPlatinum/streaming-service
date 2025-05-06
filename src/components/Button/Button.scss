@@ -5,6 +5,7 @@
   padding: fluid-to-laptop(18, 14) fluid-to-laptop(24, 20);
   font-weight: 600;
   color: var(--color-white);
+  text-align: center;
   background-color: var(--color-red-45);
   border: none;
   border-radius: var(--border-radius-s);
@@ -47,8 +48,16 @@
 	}
   }
 
+  &--black-08,
+  &--black-10 {
+	border: var(--border);
+  }
+
+  &--black-08 {
+	background-color: var(--color-black-08);
+  }
+
   &--black-10 {
 	background-color: var(--color-black-10);
-	border: var(--border);
   }
 }
