@@ -13,7 +13,7 @@ const Button = (props) => {
     iconName,
     iconPosition = 'before',
     mode = '',
-    hasFillIcon ,
+    hasFillIcon,
     extraAttrs,
   } = props
 
