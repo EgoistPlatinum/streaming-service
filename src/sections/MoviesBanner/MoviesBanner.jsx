@@ -49,7 +49,7 @@ const MoviesBanner = () => {
         hasScrollbarOnMobile={false}
       >
         {movieCards.map((movieCard, index) => (
-          <MovieBannerCard{...movieCard} key={index}/>
+          <MovieBannerCard{...movieCard} key={index} />
         ))}
       </Slider>
     </section>
