@@ -27,12 +27,12 @@ const Devices = () => {
     {
       title: 'Gaming Consoles',
       description: 'StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple App Store',
-      imgSrc: '/devices/5.svg',
+      imgSrc: '/devices/4.svg',
     },
     {
       title: 'VR Headsets',
       description: 'StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple App Store',
-      imgSrc: '/devices/6.svg',
+      imgSrc: '/devices/5.svg',
     },
   ]
 
