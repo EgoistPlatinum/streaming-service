@@ -1,11 +1,10 @@
 import Section from '@/layouts/Section'
 import CategoryCard from '@/components/CategoryCard'
-import SliderNavigation from "@/components/Slider/components/SliderNavigation";
-import Slider from "@/components/Slider";
-import {categoryItems} from "./categoryItems";
+import Slider from '@/components/Slider'
+import SliderNavigation from '@/components/Slider/components/SliderNavigation'
+import categoryItems from './categoryItems'
 
 const Categories = () => {
-
   const sliderNavigationId = 'categories-slider-navigation'
 
   return (
@@ -37,4 +36,3 @@ const Categories = () => {
 }
 
 export default Categories
-
