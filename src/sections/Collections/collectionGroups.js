@@ -340,7 +340,7 @@ const collectionGroups = [
         movieItems: [
           {
             title: 'Morbius',
-            imgSrc: '/src/assets/images/movies/1.jpg',
+            imgSrc: '/src/assets/images/movies/6.jpg',
             released: {
               label: '14 April 2023',
               dateTime: '2023-04-14',
@@ -348,7 +348,7 @@ const collectionGroups = [
           },
           {
             title: 'Morbius',
-            imgSrc: '/src/assets/images/movies/2.jpg',
+            imgSrc: '/src/assets/images/movies/7.jpg',
             released: {
               label: '14 April 2023',
               dateTime: '2023-04-14',
@@ -356,7 +356,7 @@ const collectionGroups = [
           },
           {
             title: 'Morbius',
-            imgSrc: '/src/assets/images/movies/3.jpg',
+            imgSrc: '/src/assets/images/movies/8.jpg',
             released: {
               label: '14 April 2023',
               dateTime: '2023-04-14',
@@ -364,7 +364,7 @@ const collectionGroups = [
           },
           {
             title: 'Morbius',
-            imgSrc: '/src/assets/images/movies/4.jpg',
+            imgSrc: '/src/assets/images/movies/9.jpg',
             released: {
               label: '14 April 2023',
               dateTime: '2023-04-14',
@@ -372,7 +372,7 @@ const collectionGroups = [
           },
           {
             title: 'Morbius',
-            imgSrc: '/src/assets/images/movies/5.jpg',
+            imgSrc: '/src/assets/images/movies/10.jpg',
             released: {
               label: '14 April 2023',
               dateTime: '2023-04-14',
@@ -508,7 +508,7 @@ const collectionGroups = [
         movieItems: [
           {
             title: 'Morbius',
-            imgSrc: '/src/assets/images/movies/1.jpg',
+            imgSrc: '/src/assets/images/movies/11.jpg',
             duration: '1h 57min',
             rating: {
               value: 4.5,
@@ -517,7 +517,7 @@ const collectionGroups = [
           },
           {
             title: 'Morbius',
-            imgSrc: '/src/assets/images/movies/1.jpg',
+            imgSrc: '/src/assets/images/movies/12.jpg',
             duration: '1h 57min',
             rating: {
               value: 4.5,
@@ -526,7 +526,7 @@ const collectionGroups = [
           },
           {
             title: 'Morbius',
-            imgSrc: '/src/assets/images/movies/1.jpg',
+            imgSrc: '/src/assets/images/movies/13.jpg',
             duration: '1h 57min',
             rating: {
               value: 4.5,
@@ -535,7 +535,7 @@ const collectionGroups = [
           },
           {
             title: 'Morbius',
-            imgSrc: '/src/assets/images/movies/1.jpg',
+            imgSrc: '/src/assets/images/movies/11.jpg',
             duration: '1h 57min',
             rating: {
               value: 4.5,
@@ -897,28 +897,28 @@ const collectionGroups = [
         movieItems: [
           {
             title: 'Morbius',
-            imgSrc: '/src/assets/images/movies/1.jpg',
+            imgSrc: '/src/assets/images/movies/14.jpg',
             duration: '1h 30min',
             season: '4 Season',
             href: '/show',
           },
           {
             title: 'Morbius',
-            imgSrc: '/src/assets/images/movies/1.jpg',
+            imgSrc: '/src/assets/images/movies/15.jpg',
             duration: '1h 30min',
             season: '4 Season',
             href: '/show',
           },
           {
             title: 'Morbius',
-            imgSrc: '/src/assets/images/movies/1.jpg',
+            imgSrc: '/src/assets/images/movies/16.jpg',
             duration: '1h 30min',
             season: '4 Season',
             href: '/show',
           },
           {
             title: 'Morbius',
-            imgSrc: '/src/assets/images/movies/1.jpg',
+            imgSrc: '/src/assets/images/movies/17.jpg',
             duration: '1h 30min',
             season: '4 Season',
             href: '/show',
