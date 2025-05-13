@@ -1,4 +1,5 @@
 import MovieBanner from '@/sections/MovieBanner'
+import MovieDetails from "@/sections/MovieDetails/index.js";
 
 export const metadata = {
   title: 'Movie - Kantara',
@@ -7,7 +8,8 @@ export const metadata = {
 export default function () {
   return (
     <>
-      <MovieBanner />
+      <MovieBanner/>
+      <MovieDetails/>
     </>
   )
 }
