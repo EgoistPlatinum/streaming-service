@@ -3,6 +3,7 @@ import classNames from 'classnames'
 
 const AccordionGroup = (props) => {
   const {
+    mode = '',
     columns = 1,
     children,
     isOrderedList = true,
@@ -16,6 +17,7 @@ const AccordionGroup = (props) => {
       className={classNames('accordion-group', {
         [`accordion-group--${columns}-columns`]: columns > 1,
         'accordion-group--has-counter': isOrderedList,
+        [`accordion-group--${mode}`]: mode,
       })}
     >
       {children.map((child, index) => (
