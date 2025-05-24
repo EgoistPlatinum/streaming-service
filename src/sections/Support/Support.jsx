@@ -1,6 +1,9 @@
 import './Support.scss'
 import { Image } from 'minista'
 import Field from '@/components/Field'
+import Checkbox from '@/components/Checkbox'
+import Button from '@/components/Button'
+import Select from '@/components/Select'
 
 const Support = () => {
   const titleId = 'support-title'
@@ -49,6 +52,18 @@ const Support = () => {
           placeholder="(999) 999-99-99"
           inputMode="tel"
           mask="(000) 000-00-00"
+          renderBefore={(buttonClassName) => (
+            <Select
+              label="Phone number prefix"
+              buttonClassName={buttonClassName}
+              options={[
+                { value: '+7', isSelected: true },
+                { value: '+1' },
+                { value: '+2' },
+                { value: '+3' },
+              ]}
+            />
+          )}
         />
         <Field
           className="support__form-cell support__form-cell--wide"
@@ -57,6 +72,18 @@ const Support = () => {
           placeholder="Hi! I have a question..."
           isRequired
         />
+        <div className="support__form-cell support__form-cell--wide support__form-cell--actions">
+          <Checkbox
+            className="support__form-agreement"
+            label="I agree with Terms of Use and Privacy Policy"
+            isRequired
+          />
+          <Button
+            className="support__form-submit-button"
+            label="Send Message"
+            type="submit"
+          />
+        </div>
       </form>
     </section>
   )
