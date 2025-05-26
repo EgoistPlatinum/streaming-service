@@ -9,6 +9,7 @@ const SliderNavigation = (props) => {
     hasPagination = true,
     mode = '',
     position = '',
+    justifyContent = '',
     isHiddenMobile,
     buttonMode = 'black-10',
   } = props
@@ -18,6 +19,7 @@ const SliderNavigation = (props) => {
       className={classNames(className, 'slider-navigation', {
         [`slider-navigation--${mode}`]: mode,
         [`slider-navigation--${position}`]: position,
+        [`slider-navigation--${justifyContent}`]: justifyContent,
         'hidden-mobile': isHiddenMobile,
       })}
       id={id}
