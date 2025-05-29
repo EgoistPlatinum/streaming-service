@@ -6,57 +6,49 @@
   text-align: center;
 
   @include mobile {
-    min-height: 639px;
+	min-height: 639px;
   }
 
   &__pano {
-    --heroGradientColorStart: var(--color-black-08);
-    --heroGradientColorEnd: rgb(20 20 20 / 0);
+	--heroGradientColorStart: var(--color-black-08);
+	--heroGradientColorEnd: transparent 67.5%;
 
-    --heroGradientHeight: 67.5%;
+	@include flex-center;
 
-    --heroGraidentTop: linear-gradient(
-      to bottom,
-      var(--heroGradientColorStart) 0%,
-      var(--heroGradientColorEnd) 100%
-    ) 50% 0/100% var(--heroGradientHeight);
-
-    --heroGraidentBottom: linear-gradient(
-      to top,
-      var(--heroGradientColorStart) 0%,
-      var(--heroGradientColorEnd) 100%
-    ) 50% 101%/100% var(--heroGradientHeight);
-
-    @include flex-center;
-
-    flex-grow: 1;
-    padding-top: fluid(195, 150);
-    padding-bottom: fluid(131, 50);
-    background:
-      var(--heroGraidentTop),
-      var(--heroGraidentBottom),
-      url('../../assets/images/hero/bg.png') 50%/cover;
-    background-repeat: no-repeat;
+	flex-grow: 1;
+	padding-top: fluid(195, 150);
+	padding-bottom: fluid(131, 50);
+	background: linear-gradient(
+					to bottom,
+					var(--heroGradientColorStart),
+					var(--heroGradientColorEnd)
+	),
+	linear-gradient(
+					to top,
+					var(--heroGradientColorStart),
+					var(--heroGradientColorEnd)
+	),
+	url('@/assets/images/hero/bg.png') 50%/cover;
   }
 
   &__play-button {
-    @include square(fluid(470, 200));
+	@include square(fluid(470, 200));
 
-    padding: 0;
-    background-color: transparent;
-    border: none;
+	padding: 0;
+	background-color: transparent;
+	border: none;
   }
 
   &__title {
-    margin-top: -0.5em;
-    margin-bottom: fluid-to-laptop(14, 10);
+	margin-top: -0.5em;
+	margin-bottom: fluid-to-laptop(14, 10);
   }
 
   &__description {
-    margin-bottom: fluid(50, 30);
+	margin-bottom: fluid(50, 30);
   }
 
   &__body {
-    padding-bottom: fluid(50, 20);
+	padding-bottom: fluid(50, 20);
   }
 }
